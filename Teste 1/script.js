@@ -1,15 +1,41 @@
+function fim(){
     var op = document.getElementsByName('option')
     var option2 = document.getElementsByName('option2')
     var option3 = document.getElementsByName('option3')
-    var p2 = document.getElementById('página2')
-    var res = p2.document.getElementById('res')
+    var res = document.getElementById('res')
     if(op[0].checked){
-        res.innerHTML= `Sim`
+        if(option2[0].checked){
+            if(option3[0].checked){
+                res.innerHTML = `Muitoooo gay`
+            }else if(option3[1].checked){
+                res.innerHTML = `Bem gay`
+            }
+        }else if (option2[1].checked){
+            if(option3[0].checked){
+                res.innerHTML = `Bem gay`
+            }else if(option3[1].checked){
+                res.innerHTML = `Pouco gay`
+            }
+        }
+    
+    
     }else if(op[1].checked){
-        res.innerHTML =`Não`
+        if(option2[0].checked){
+            if(option3[0].checked){
+                res.innerHTML = `Bem gay`
+            }else if(option3[1].checked){
+                res.innerHTML = `Pouco gay`
+            }
+        }else if(option2[1].checked){
+            if(option3[0].checked){
+                res.innerHTML = `Porque vc mamou seu amigo cara?`
+            }else if(option3[1].checked){
+                res.innerHTML = `1% gay`
+            }
+        }
 
     }
-    
+}    
 
 
 
